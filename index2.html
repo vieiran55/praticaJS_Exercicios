@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testes</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body class="corpo" id="corpo">
+  <div class="nomeDigitado">
+    <h1 class="titulo"> soma </h1>
+    <input type="text" id=soma1 placeholder="digite" />
+    <input type="text" id=soma2 placeholder="digite" />
+
+    <button onclick="soma()">Soma</button>
+
+    <input type="text" id="resultado-soma" name="resultado-soma" disabled>
+  </div>
+
+
+  <div>
+    <button onclick="bkVerde()">Verde</button>
+    <button onclick="bkVermelho()">Vermelho</button>
+
+  </div>
+  <button onclick="inserirJS()">resultado</button>
+  <button onclick="inserirSomaJS()">resultado soma</button>
+  <button onclick="inserirMultJS()">resultado Multiplicação</button>
+  <button onclick="inserirWhile()">Tabuada</button>
+
+
+  <div id="resultado" class="titulo"></div>
+
+  <div id="tabuada" class="titulo"></div>
+
+  <div class="nomeDigitado titulo">Impar || Par</div>
+
+  <input type="text" id="numero1" placeholder="digite" />
+  <button id='btnParImpar' onclick="verificarIP()">Verificar</button>
+
+
+  <div id="desconto" class="titulo nomeDigitado">
+    <h1 class="titulo"> Calcular Desconto </h1>
+    <input type="text" id=preco placeholder="Valor do Produto" />
+    <input type="text" id=porcentagem placeholder="Porcentagem de desconto" />
+    <button onclick="desconto()">Calcular</button>
+  </div>
+
+  <div id="maiorIdade" class="titulo nomeDigitado">
+    <h1 class="titulo"> Verificador de Maior Idade </h1>
+    <input type="number" id="data" placeholder="Digite o ano de Nascimento" />
+    <button onclick="verificarAno()">Verificar</button>
+
+  </div>
+
+  <div id="palavraDiv" class="titulo nomeDigitado">
+    <h1 class="titulo"> Verificador de caracteres </h1>
+    <input type="text" id="palavra" placeholder="Digite a palavra" />
+    <button onclick="verificarPalavra()">Verificar</button>
+
+  </div>
+
+  <div id="sorteio" class="titulo nomeDigitado">
+    <h1 class="titulo"> Sorteio de Numeros</h1>
+    <input type="text" id="nrchutado" placeholder="nr 1-10 e boa sorte!" />
+    <button onclick="sorteio()">Sortear</button>
+
+  </div>
+
+</body>
+<script src="./soma.js"></script>
+<script src="./backgroundFunction.js"></script>
+<script src="./imparpar.js"></script>
+<script src="./desconto.js"></script>
+<script src="./maiordeIdade.js"></script>
+<script src="./validanomes.js"></script>
+
+</html>

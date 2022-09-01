@@ -1,0 +1,104 @@
+.corpo{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.corpoBKVerDe{
+    background: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.corpoBKVermelho{
+    background: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculadora {
+    margin-top: 20vw;
+    display: flex;
+    background: red;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20em;
+    height: 20em;
+    font-size: 30px;
+
+}
+
+.display{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: yellow;
+    margin: 0.1em;
+    text-align: center;
+}
+
+
+.calc__linhas{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.calc__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: yellow;
+    margin: 0.1em;
+    text-align: center;
+}
+
+.calc__item:hover {
+    background: darkgoldenrod;
+}
+
+.calc__item:active{
+    background: blue;
+    transition: 0.5s;
+}
+
+.nomeDigitado {
+    display: flex;
+    flex-direction: column;
+}
+
+.lampada{
+    cursor: pointer;
+}
+
+button {
+    margin: 1em;
+}
+
+.titulo{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
+
+.tabuada {
+    display: flex;
+    background: white;
+    padding: 1em;
+    margin: 1em;
+    justify-content: space-between;
+}
+
+.animacao{
+    display: flex;
+    flex-direction: column;
+}

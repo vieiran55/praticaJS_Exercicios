@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <h1 class="titulo"> Teste de Nome</h1>
+
+  <div class="nomeDigitado">
+    <input type="text" id="nome" placeholder="digite o nome completo">
+    <button id="btnNome" onclick="exibir()">Exibir Nome</button>
+
+    <h1 class="titulo"> Teste de saudação</h1>
+
+    <input type="text" id="nome1" placeholder="Digite seu primeiro nome">
+    <input type="text" id="nome2" placeholder="Digite seu sobrenome">
+    <button id="btnSlv" onclick="exibirSlv()">Saudação</button>
+
+    <h1 class="titulo"> cpf => cpf com ponto </h1>
+
+    <input type="text" 
+    maxlength="11" 
+    id="cpf" 
+    placeholder="CPF, Apenas Numeros" 
+    pattern=""
+    onblur=""/>
+
+
+    <input id="cpfHide" name="cpfVazio" placeholder="" disabled></input>
+
+
+    <h1 class="titulo"> cpf com ponto => cpf </h1>
+
+    <input type="text" 
+    maxlength="14" 
+    id="cpf2" 
+    placeholder="CPF, com pontos" 
+    pattern=""
+    onblur=""/>
+
+
+    <input id="cpfHide" name="cpf2Vazio" placeholder="" disabled></input>
+
+
+  </div>
+  <!-- <img class="lampada" alt=""> -->
+
+  <h1 class="titulo"> Lampada Acesa</h1>
+
+
+    <img onmouseover="turnOn()" onmouseout="turnOf()" class="lampada" id="lampada" src="./apagada.jpg" onclick="trocarLampada()" alt="">
+    <div class="botoes">
+    <button onclick="acende()">acende</button>
+    <button onclick="apaga()">apaga</button>
+
+
+  </div>
+</body>
+<script src="./script.js" ></script>
+<script src="./validanomes.js" ></script>
+
+</html>
