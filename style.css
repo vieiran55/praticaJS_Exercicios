@@ -96,9 +96,11 @@ button {
     padding: 1em;
     margin: 1em;
     justify-content: space-between;
+    transform: rotate(30);
 }
 
-.animacao{
+/* .animacao{
     display: flex;
     flex-direction: column;
-}
+} */
+
